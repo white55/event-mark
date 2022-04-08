@@ -1,0 +1,189 @@
+[
+    {
+        "event_type": "CashFlow",
+        "event_type_chinese": "资金流动",
+        "description": "强调金钱及账户状态的变更",
+        "triggers": [
+            "冻结",
+            "转账",
+            "汇入",
+            "提现",
+            "借款",
+            "贷款"
+        ],
+        "arguments": [
+            {
+                "role_type": "主体",
+                "role": "OutFlows",
+                "role_chinese": "资金流出方"
+            },
+            {
+                "role_type": "客体",
+                "role": "Inflows",
+                "role_chinese": "资金流入方"
+            },
+            {
+                "role_type": "",
+                "role": "Time",
+                "role_chinese": "时间"
+            },
+            {
+                "role_type": "",
+                "role": "Tool",
+                "role_chinese": "工具"
+            }
+        ]
+    },
+    {
+        "event_type": "Contact",
+        "event_type_chinese": "社交行为",
+        "description": "主要指添加、删除好友",
+        "triggers": [
+            "添加",
+            "拉黑",
+            "结识"
+        ],
+        "arguments": [
+            {
+                "role_type": "主体",
+                "role": "Adder",
+                "role_chinese": "添加人"
+            },
+            {
+                "role_type": "客体",
+                "role": "Addee",
+                "role_chinese": "被添加人"
+            },
+            {
+                "role_type": "",
+                "role": "Time",
+                "role_chinese": "时间"
+            },
+            {
+                "role_type": "",
+                "role": "Tool",
+                "role_chinese": "工具"
+            }
+        ]
+    },
+    {
+        "event_type": "Report",
+        "event_type_chinese": "报案行为",
+        "description": "强调受害者把违反法律、危害社会治安的事件报告给公安或司法机关",
+        "triggers": [
+            "报警",
+            "报案"
+        ],
+        "arguments": [
+            {
+                "role_type": "主体",
+                "role": "Caller",
+                "role_chinese": "报案人"
+            },
+            {
+                "role_type": "客体",
+                "role": "Accpector",
+                "role_chinese": "受理方"
+            },
+            {
+                "role_type": "",
+                "role": "Time",
+                "role_chinese": "时间"
+            }
+        ]
+    },
+    {
+        "event_type": "Connect",
+        "event_type_chinese": "沟通行为",
+        "description": "指通过微信、QQ、电话、短信等聊天工具发送文本、图片的行为",
+        "triggers": [
+            "发送",
+            "发来",
+            "收到",
+            "接到",
+            "通话",
+            "联系"
+        ],
+        "arguments": [
+            {
+                "role_type": "主体",
+                "role": "Sender",
+                "role_chinese": "发送人"
+            },
+            {
+                "role_type": "客体",
+                "role": "Receiver",
+                "role_chinese": "接收人"
+            },
+            {
+                "role_type": "",
+                "role": "Time",
+                "role_chinese": "时间"
+            },
+            {
+                "role_type": "",
+                "role": "Tool",
+                "role_chinese": "工具"
+            }
+        ]
+    },
+    {
+        "event_type": "Operation",
+        "event_type_chinese": "软件操作",
+        "description": "强调操作人下载、注册、点击链接等动作",
+        "triggers": [
+            "下载",
+            "提交",
+            "指导"
+        ],
+        "arguments": [
+            {
+                "role_type": "主体",
+                "role": "Operator",
+                "role_chinese": "操作人"
+            },
+            {
+                "role_type": "",
+                "role": "Time",
+                "role_chinese": "时间"
+            },
+            {
+                "role_type": "",
+                "role": "Tool",
+                "role_chinese": "工具"
+            }
+        ]
+    },
+    {
+        "event_type": "Pretend",
+        "event_type_chinese": "冒充行为",
+        "description": "伪造身份的行为",
+        "triggers": [
+            "自称",
+            "伪装",
+            "冒充"
+        ],
+        "arguments": [
+            {
+                "role_type": "主体",
+                "role": "Imperson",
+                "role_chinese": "冒充人"
+            },
+            {
+                "role_type": "类别属性",
+                "role": "Identity",
+                "role_chinese": "冒充身份"
+            },
+            {
+                "role_type": "",
+                "role": "Time",
+                "role_chinese": "时间"
+            },
+            {
+                "role_type": "",
+                "role": "Tool",
+                "role_chinese": "工具"
+            }
+        ]
+    }
+]
